@@ -1,0 +1,226 @@
+topics:
+  -
+    topic: /os1_cloud_node/points_non_dense
+    type: sensor_msgs/msg/PointCloud2
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /os1_cloud_node/imu
+    type: sensor_msgs/msg/Imu
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /tf_static
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /usb_cam/camera_info
+    type: sensor_msgs/msg/CameraInfo
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /usb_cam/image_raw/compressed
+    type: sensor_msgs/msg/CompressedImage
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /drone/radar/PointCloudDetection
+    type: sensor_msgs/msg/PointCloud2
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /drone/radar/PointCloudObject
+    type: sensor_msgs/msg/PointCloud2
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /drone/radar/DirectionVelocity
+    type: geometry_msgs/msg/PoseArray
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/battery_state
+    type: sensor_msgs/msg/BatteryState
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/gps_health
+    type: std_msgs/msg/UInt8
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/acceleration_ground_fused
+    type: geometry_msgs/msg/Vector3Stamped
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/height_above_takeoff
+    type: std_msgs/msg/Float32
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/imu
+    type: sensor_msgs/msg/Imu
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/attitude
+    type: geometry_msgs/msg/QuaternionStamped
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/flight_status
+    type: std_msgs/msg/UInt8
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/angular_velocity_fused
+    type: geometry_msgs/msg/Vector3Stamped
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/rc
+    type: sensor_msgs/msg/Joy
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/velocity
+    type: geometry_msgs/msg/Vector3Stamped
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /dji_sdk/gps_position
+    type: sensor_msgs/msg/NavSatFix
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /TakeOff/status
+    type: actionlib_msgs/msg/GoalStatusArray
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile              
+
+    topic: /arco/cmd_vel_joy
+    type: geometry_msgs/msg/Twist
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /arco/idmind_imu/imu
+    type: sensor_msgs/msg/Imu
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /arco/idmind_motors/set_velocities
+    type: geometry_msgs/msg/Twist
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /arco/idmind_motors/odom
+    type: nav_msgs/msg/Odometry
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+
+    topic: /arco/cmd_vel_nav
+    type: geometry_msgs/msg/Twist
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
