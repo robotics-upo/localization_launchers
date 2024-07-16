@@ -6,10 +6,12 @@
 
     <include file="$(find-pkg-share ars_548_driver)/launch/ars548_launch.xml" >
         <arg name="frameID_Radar" value="arco/ARS548"/>
+        <arg name="viz" value="false"/>
     </include>
 
     <include file="$(find-pkg-share eliko_driver)/launch/eliko_launch.xml" >
-        <arg name="frameID" value="arco/Eliko"/>
+        <arg name="frameID" value="arco/eliko"/>
+        <arg name="viz" value="false"/>
     </include>
     <node pkg="ros1_bridge" exec="parameter_brige" name="ros1_bridge"/>
 </launch>
