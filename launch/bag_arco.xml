@@ -1,0 +1,69 @@
+<launch>
+    <executable cmd="rosbag record  
+    /height_above_takeoff
+    /dji_sdk/acceleration_ground_fused 
+    /dji_sdk/angular_velocity_fused 
+    /dji_sdk/attitude
+    /dji_sdk/battery_state 
+    /dji_sdk/flight_status 
+    /dji_sdk/gps_health 
+    /dji_sdk/gps_position
+    /dji_sdk/height_above_takeoff
+    /dji_sdk/imu 
+    /dji_sdk/rc
+    /dji_sdk/velocity
+
+    /tf_static
+    /tf
+
+    /os1_cloud_node/imu  
+    /os1_cloud_node/points_non_dense
+
+    /arco/ouster/imu             
+    /arco/ouster/points
+
+    /arco_os1_cloud_node/points_non_dense
+    
+    /arco/idmind_imu/imu
+    /arco/cmd_vel_joy
+    /arco/cmd_vel_nav
+    /arco/idmind_motors/set_velocities
+    /arco/idmind_motors/odom
+
+    /TakeOff/cancel
+    /TakeOff/feedback
+    /TakeOff/goal
+    /TakeOff/result
+    /TakeOff/status
+
+    /usb_cam/image_raw/compressed
+    /usb_cam/camera_info
+
+    /arco/DetectionList
+    /arco/DirectionVelocity
+    /arco/ObjectList
+    /arco/PointCloudDetection
+    /arco/PointCloudObject
+    /arco/Status
+
+    /drone/radar/DetectionList
+    /drone/radar/DirectionVelocity
+    /drone/radar/ObjectList
+    /drone/radar/PointCloudDetection
+    /drone/radar/PointCloudObject
+    /drone/radar/Status
+
+    /arco/TagCoords
+    /arco/Tag_Coords/T0x001155
+    /arco/Tag_Coords/T0x001397
+    /arco/Distances
+    /arco/Distance/A0x0009E5/T0x001155
+    /arco/Distance/A0x0009E5/T0x001397
+    /arco/Distance/A0x0009D6/T0x001155
+    /arco/Distance/A0x0009D6/T0x001397
+    /arco/Distance/A0x0016FA/T0x001155
+    /arco/Distance/A0x0016FA/T0x001397
+    /arco/Distance/A0x0016CF/T0x001155
+    /arco/Distance/A0x0016CF/T0x001397
+    " />
+</launch>
