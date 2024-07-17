@@ -11,10 +11,13 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 install(DIRECTORY
-  config
+  scripts
   DESTINATION share/${PROJECT_NAME}/
+  PATTERN "scripts/*"
+  PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ
 )
 install(DIRECTORY
+  config
   launch
   DESTINATION share/${PROJECT_NAME}/
 )
