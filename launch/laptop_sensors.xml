@@ -19,5 +19,7 @@
         <include file="$(find-pkg-share localization_launchers)/launch/frames_arco.xml" >
         </include>
     </group>
-    <!--<node pkg="ros1_bridge" exec="parameter_brige" name="ros1_bridge"/>-->
+    <include file="$(find-pkg-share localization_launchers)/scripts/load_parameters.sh">
+    </include>
+    <node pkg="ros1_bridge" exec="load_parameters.sh" name="ros1_bridge" args="$(find-pkg-share localization_launchers)/config/bridge.yaml"/>
 </launch>
