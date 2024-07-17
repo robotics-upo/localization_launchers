@@ -1,5 +1,5 @@
 <launch>
-    <executable cmd="rosbag record  
+    <executable cmd="ros2 bag record  
     /height_above_takeoff
     /dji_sdk/acceleration_ground_fused 
     /dji_sdk/angular_velocity_fused 
@@ -39,12 +39,12 @@
     /usb_cam/image_raw/compressed
     /usb_cam/camera_info
 
-    /arco/DetectionList
-    /arco/DirectionVelocity
-    /arco/ObjectList
-    /arco/PointCloudDetection
-    /arco/PointCloudObject
-    /arco/Status
+    /arco/radar/DetectionList
+    /arco/radar/DirectionVelocity
+    /arco/radar/ObjectList
+    /arco/radar/PointCloudDetection
+    /arco/radar/PointCloudObject
+    /arco/radar/Status
 
     /drone/radar/DetectionList
     /drone/radar/DirectionVelocity
@@ -53,17 +53,17 @@
     /drone/radar/PointCloudObject
     /drone/radar/Status
 
-    /arco/TagCoords
-    /arco/Tag_Coords/T0x001155
-    /arco/Tag_Coords/T0x001397
-    /arco/Distances
-    /arco/Distance/A0x0009E5/T0x001155
-    /arco/Distance/A0x0009E5/T0x001397
-    /arco/Distance/A0x0009D6/T0x001155
-    /arco/Distance/A0x0009D6/T0x001397
-    /arco/Distance/A0x0016FA/T0x001155
-    /arco/Distance/A0x0016FA/T0x001397
-    /arco/Distance/A0x0016CF/T0x001155
-    /arco/Distance/A0x0016CF/T0x001397
+    /eliko/TagCoords
+    /eliko/Tag_Coords/T0x001155
+    /eliko/Tag_Coords/T0x001397
+    /eliko/Distances
+    /eliko/Distance/A0x0009E5/T0x001155
+    /eliko/Distance/A0x0009E5/T0x001397
+    /eliko/Distance/A0x0009D6/T0x001155
+    /eliko/Distance/A0x0009D6/T0x001397
+    /eliko/Distance/A0x0016FA/T0x001155
+    /eliko/Distance/A0x0016FA/T0x001397
+    /eliko/Distance/A0x0016CF/T0x001155
+    /eliko/Distance/A0x0016CF/T0x001397
     " />
 </launch>

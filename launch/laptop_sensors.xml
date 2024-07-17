@@ -20,5 +20,6 @@
         </include>
     </group>
     <include file="$(find-pkg-share localization_launchers)/launch/frames_arco.xml"/>
+    <include file="$(find-pkg-share localization_launchers)/launch/frames_drone.xml"/>
     <executable cmd="$(find-pkg-share localization_launchers)/scripts/start_bridge.sh bridge.yaml" cwd="$(find-pkg-share localization_launchers)/config" name="bridge" output="screen" shell="true"/>
 </launch>
