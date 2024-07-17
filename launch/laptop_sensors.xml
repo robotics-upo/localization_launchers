@@ -1,23 +1,24 @@
 <launch>
     <group>
         <push-ros-namespace namespace="arco"/>
-        <include file="$(find-pkg-share ouster_ros)/launch/driver.launch.py" >
+        <include file="$(find-pkg-share ouster_ros)/launch/driver.launch.py">
             <arg name="params_file" value="$(find-pkg-share localization_launchers)/config/arco_os1_driver_params.yaml"/>
-            
         </include>
-
-        <include file="$(find-pkg-share ars548_driver)/launch/ars548_launch.xml" >
+    </group>
+    <group>
+        <push-ros-namespace namespace="arco/radar"/>    
+        <include file="$(find-pkg-share ars548_driver)/launch/ars548_launch.xml">
             <arg name="frameID_Radar" value="arco/ARS548"/>
             <arg name="viz" value="false"/>
         </include>
-
-        <include file="$(find-pkg-share eliko_driver)/launch/eliko_launch.xml" >
+    </group>
+    <group>
+        <push-ros-namespace namespace="eliko"/>
+        <include file="$(find-pkg-share eliko_driver)/launch/eliko_launch.xml">
             <arg name="frameID" value="arco/eliko"/>
             <arg name="viz" value="false"/>
         </include>
-
-        <include file="$(find-pkg-share localization_launchers)/launch/frames_arco.xml" >
-        </include>
     </group>
-    <!--<node pkg="ros1_bridge" exec="parameter_brige" name="ros1_bridge"/>-->
+    <include file="$(find-pkg-share localization_launchers)/launch/frames_arco.xml">
+    </include>   
 </launch>
