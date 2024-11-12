@@ -1,0 +1,61 @@
+topics_arco:
+  -
+    topic: /tf
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      durability: transient_local  # OR volatile
+  -
+    topic: /tf_static
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 1
+    qos:
+      history: keep_all  # OR keep_all, then you can omit `depth` parameter below
+      durability: transient_local  # OR volatile  
+  -
+    topic: /arco/cmd_vel_joy
+    type: geometry_msgs/msg/Twist
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+  -
+    topic: /arco/idmind_imu/imu
+    type: sensor_msgs/msg/Imu
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+  -
+    topic: /arco/idmind_motors/set_velocities
+    type: geometry_msgs/msg/Twist
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+  -
+    topic: /arco/idmind_motors/odom
+    type: nav_msgs/msg/Odometry
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile
+  -
+    topic: /arco/cmd_vel_nav
+    type: geometry_msgs/msg/Twist
+    queue_size: 1
+    qos:
+      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
+      depth: 10  # Only required when history == keep_last
+      reliability: best_effort  # OR best_effort
+      durability: transient_local  # OR volatile

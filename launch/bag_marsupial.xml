@@ -19,25 +19,27 @@
     /os1_cloud_node/imu  
     /os1_cloud_node/points_non_dense
 
-    /arco/ouster/imu             
-    /arco/ouster/points
+    /drone/radar/DetectionList
+    /drone/radar/DirectionVelocity
+    /drone/radar/ObjectList
+    /drone/radar/PointCloudDetection
+    /drone/radar/PointCloudObject
+    /drone/radar/Status
 
-    /arco_os1_cloud_node/points_non_dense
-    
-    /arco/idmind_imu/imu
-    /arco/cmd_vel_joy
-    /arco/cmd_vel_nav
-    /arco/idmind_motors/set_velocities
-    /arco/idmind_motors/odom
+    /usb_cam/image_raw/compressed
+    /usb_cam/camera_info
 
     /TakeOff/cancel
     /TakeOff/feedback
     /TakeOff/goal
     /TakeOff/result
     /TakeOff/status
-
-    /usb_cam/image_raw/compressed
-    /usb_cam/camera_info
+    
+    /arco/idmind_imu/imu
+    /arco/cmd_vel_joy
+    /arco/cmd_vel_nav
+    /arco/idmind_motors/set_velocities
+    /arco/idmind_motors/odom
 
     /arco/radar/DetectionList
     /arco/radar/DirectionVelocity
@@ -46,12 +48,22 @@
     /arco/radar/PointCloudObject
     /arco/radar/Status
 
-    /drone/radar/DetectionList
-    /drone/radar/DirectionVelocity
-    /drone/radar/ObjectList
-    /drone/radar/PointCloudDetection
-    /drone/radar/PointCloudObject
-    /drone/radar/Status
+    /arco/ouster/imu             
+    /arco/ouster/points
+    /arco/ouster/metadata
+    /arco/ouster/nearir_image
+    /arco/ouster/os_driver/transition_event
+    /arco/ouster/range_image
+    /arco/ouster/reflec_image
+    /arco/ouster/scan
+    /arco/ouster/signal_image
+
+    /arco/camera/color/camera_info
+    /arco/camera/color/image_raw
+    /arco/camera/depth/camera_info
+    /arco/camera/depth/image_rect_raw
+    /arco/camera/extrinsics/depth_to_color
+    /arco/camera/extrinsics/depth_to_depth
 
     /eliko/TagCoords
     /eliko/Tag_Coords/T0x001155

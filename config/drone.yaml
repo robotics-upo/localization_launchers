@@ -1,22 +1,4 @@
-topics:
-  -
-    topic: /os1_cloud_node/points_non_dense
-    type: sensor_msgs/msg/PointCloud2
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
-      durability: transient_local  # OR volatile
-  -
-    topic: /os1_cloud_node/imu
-    type: sensor_msgs/msg/Imu
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
-      durability: transient_local  # OR volatile
+topics_drone:
   -
     topic: /tf
     type: tf2_msgs/msg/TFMessage
@@ -31,51 +13,6 @@ topics:
     queue_size: 1
     qos:
       history: keep_all  # OR keep_all, then you can omit `depth` parameter below
-      durability: transient_local  # OR volatile
-  -
-    topic: /usb_cam/camera_info
-    type: sensor_msgs/msg/CameraInfo
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
-      durability: transient_local  # OR volatile
-  -
-    topic: /usb_cam/image_raw/compressed
-    type: sensor_msgs/msg/CompressedImage
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
-      durability: transient_local  # OR volatile
-  -
-    topic: /drone/radar/PointCloudDetection
-    type: sensor_msgs/msg/PointCloud2
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
-      durability: transient_local  # OR volatile
-  -
-    topic: /drone/radar/PointCloudObject
-    type: sensor_msgs/msg/PointCloud2
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
-      durability: transient_local  # OR volatile
-  -
-    topic: /drone/radar/DirectionVelocity
-    type: geometry_msgs/msg/PoseArray
-    queue_size: 1
-    qos:
-      history: keep_last  # OR keep_all, then you can omit `depth` parameter below
-      depth: 10  # Only required when history == keep_last
-      reliability: best_effort  # OR best_effort
       durability: transient_local  # OR volatile
   -
     topic: /dji_sdk/battery_state
