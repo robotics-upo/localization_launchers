@@ -15,16 +15,16 @@ To use this project you also need to download and compile this other projects:
 
 How to use the project.
 ---
-Once you have downloaded and compiled all of the dependencies you can execute this project going to the folder where you have downloaded this project and executing the next commands on your:
+Copy the following lines to clone the repository and compile it:
 ```
-    >colcon build --symlink-install --packages-select localization_launchers
-    >source install/setup.bash
-    >ros2 launch localization_launchers laptop_sensors
+    git clone https://github.com/robotics-upo/localization_launchers.git
+    colcon build --symlink-install --packages-select localization_launchers
+    source install/setup.bash
 ```
-The first command is used to build the project.\
-The second command is used to source the project.\
-The last command is used to launch the project and see the results in Rviz 2.
-
+Run the following line to launch the project:
+```
+    ros2 launch localization_launchers laptop_sensors
+```
 
 Experiments documentation 
 ---
