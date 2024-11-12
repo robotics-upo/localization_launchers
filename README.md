@@ -4,18 +4,20 @@ Dependencies
 ---
 To use this project you also need to download and compile this other projects:
 
-* ### ousters_ros
+* ### Ousters_ros
     Used to communicate with the LiDAR sensor that is installed on the ARCO and Drone.
-*  ### ars548_driver
+*  ### Ars548_driver
     Used to communicate with the ARS548 radar installed on the ARCO and Drone.
-* ### eliko_driver
+      https://github.com/robotics-upo/ars548_ros
+* ### Eliko_driver
     Used to communicate with the Eliko sensors installed on the ARCO.
+      https://github.com/robotics-upo/eliko_ros
 
 How to use the project.
 ---
 Once you have downloaded and compiled all of the dependencies you can execute this project going to the folder where you have downloaded this project and executing the next commands on your:
 ```
-    >colcon build --packages-select localization_launchers
+    >colcon build --symlink-install --packages-select localization_launchers
     >source install/setup.bash
     >ros2 launch localization_launchers laptop_sensors
 ```
