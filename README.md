@@ -17,16 +17,16 @@ How to use the project.
 ---
 Copy the following lines to create a workspace, clone the repository and compile it:
 ```
-    mkdir -p ~/launcher_ws/src
-    cd ~/launcher_ws/src
-    git clone https://github.com/robotics-upo/localization_launchers.git
-    cd ..
-    colcon build --symlink-install --packages-select localization_launchers
-    source install/setup.bash
+mkdir -p ~/launcher_ws/src
+cd ~/launcher_ws/src
+git clone https://github.com/robotics-upo/localization_launchers.git
+cd ..
+colcon build --symlink-install --packages-select localization_launchers
+source install/setup.bash
 ```
 Run the following line to launch the project:
 ```
-    ros2 launch localization_launchers laptop_sensors
+ros2 launch localization_launchers laptop_sensors.xml
 ```
 
 Experiments documentation 
