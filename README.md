@@ -18,7 +18,7 @@ How to use the project.
 Copy the following lines to create a workspace, clone the repository and compile it:
 ```
     mkdir -p ~/launcher_ws/src
-    cd ~/launcher_Ws/src
+    cd ~/launcher_ws/src
     git clone https://github.com/robotics-upo/localization_launchers.git
     cd ..
     colcon build --symlink-install --packages-select localization_launchers
