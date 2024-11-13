@@ -10,7 +10,7 @@ To use this project you also need to download and compile this other projects:
     Used to communicate with the ARS548 radar installed on the ARCO and Drone.
       https://github.com/robotics-upo/ars548_ros
 * ### Eliko_driver
-    Used to communicate with the Eliko sensors installed on the ARCO.
+    Used to communicate with the Eliko system installed on the ARCO.
       https://github.com/robotics-upo/eliko_ros
 
 How to use the project.
